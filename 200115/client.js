@@ -23,7 +23,6 @@ const binder = scanner.scan(document.querySelector("#target"));
 binder.render(viewmodel);
 
 
-
 const viewmodel = ViewModel.get({
     isStop: false,
     styles: {
@@ -40,7 +39,7 @@ const viewmodel = ViewModel.get({
 
 const f = _ => {
     viewmodel.changeContents();
-    binder.render(viewmodwl);
+    binder.render(viewmodel);
     if (!viewmodel.isStop) requestAnimationFrame(f);
 }
 requestAnimationFrame(f);

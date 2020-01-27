@@ -10,5 +10,6 @@ const Binder = class{
             Object.entries(vm.events).forEach(([k, v])=>el["on"+k]=e=>v.call(el, e, viewmodel));
         });
     }
-}
+};
+
 export default Binder;
